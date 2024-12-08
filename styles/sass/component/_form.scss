@@ -1,0 +1,69 @@
+.hero-section {
+  .container {
+    width: 100%;
+    @include flex-justify;
+    .form-box {
+      position: absolute;
+      top: 120px;
+      padding: 0 20px;
+      width: 1110px;
+      @include flex-align;
+      height: 80px;
+      background-color: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      form {
+        width: 100%;
+        display: flex !important;
+        img{
+          height: 24px;
+        }
+  
+        .input-group {
+          @include flex-align;
+          width: 100%;
+          gap: 10px;
+          label {
+            margin-right: 8px;
+            opacity: 50%;
+            color: $base-font-color;
+            font-size: 16px !important;
+          }
+          input {
+            width: 100%;
+            outline: none;
+            border: none;
+            // &::placeholder {
+            //   font-size: 18px;
+            //   line-height: 22px;
+            //   letter-spacing: 0.5px;
+            //   opacity: 50%;
+            //   color: $base-font-color;
+            // }
+          }
+        }
+      }
+    }
+  }
+}
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-right: 15px;
+  input {
+    width: 100%;
+  }
+  label {
+    width: 100%;
+  }
+}
+
+  .search-button{
+    width: 123px;
+    height: 48px;
+    background-color: $base-color;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: $font-family;
+  }

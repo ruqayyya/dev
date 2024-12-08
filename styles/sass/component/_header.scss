@@ -1,0 +1,41 @@
+.header {
+  .container {
+    @include flex-align;
+    width: 100%;
+    height: 161px;
+    background-image: url(../../../assets/images/svg/Triangle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 0 100px;
+    .header-box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 165px 44px 165px;
+      .title {
+        img {
+          height: 32px;
+        }
+      }
+      .mode {
+        @include flex-align;
+        gap: 10px;
+        .light {
+          img {
+            height: 18.6px;
+          }
+        }
+        .toggle {
+          img {
+            height: 24px;
+          }
+        }
+        .dark {
+          img {
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+}
